@@ -13,7 +13,7 @@ docker build -t ai-apps .
 
 2. Run the container:
 ```bash
-docker run -p 8501:8501 \
+docker run --name ai-streamlit-app -p 8501:8501 \
   -v $(pwd):/app \
   ai-apps
 ```
