@@ -13,7 +13,9 @@ docker build -t ai-apps .
 
 2. Run the container:
 ```bash
-docker run -p 8501:8501 ai-apps
+docker run -p 8501:8501 \
+  -v $(pwd):/app \
+  ai-apps
 ```
 
 3. Open your browser and navigate to `http://localhost:8501`
